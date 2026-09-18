@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>김하늘 | 포트폴리오 & 문의하기</title>
+    <meta name="description" content="컴퓨터공학과 24학번 김하늘의 소개 페이지입니다. 프로젝트 이력을 확인하고 문의하기 폼으로 연락할 수 있습니다.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hnneul.github.io/web-practice-2026/week3/">
+    <meta property="og:title" content="김하늘 | 포트폴리오 & 문의하기">
+    <meta property="og:description" content="컴퓨터공학과 24학번 김하늘의 소개 페이지입니다. 프로젝트 이력을 확인하고 문의하기 폼으로 연락할 수 있습니다.">
+
+    <style>
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid; padding: 4px 8px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="profile.svg" alt="김하늘의 프로필 이미지, 파란 원 안에 이니셜 KH가 적혀 있다" width="120" height="120">
+        <h1>김하늘</h1>
+        <p>컴퓨터공학과 24학번</p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#contact">문의하기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>소개</h2>
+            <p>
+                안녕하세요, 저는 22살 김하늘 입니다.<br>
+                만들고 싶은 게 생기면 일단 만들어보는 편입니다.<br>
+                아직 안 해본 게 많은데 뭐든 재밌게 해보고 싶습니다!
+            </p>
+
+            <h3>배우고 싶은 기술 스택</h3>
+            <ul>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>프로젝트</h2>
+            <table>
+                <caption>진행한 프로젝트 목록</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">이름</th>
+                        <th scope="col">역할</th>
+                        <th scope="col">기간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>tongkk</td>
+                        <td>기획, 백엔드</td>
+                        <td>2026.03 ~ 05</td>
+                    </tr>
+                    <tr>
+                        <td>미리안심</td>
+                        <td>프론트, 백엔드</td>
+                        <td>2026.07 ~ 08</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>문의하기</h2>
+            <form action="/contact" method="post">
+                <fieldset>
+                    <legend>문의 정보를 입력해 주세요.</legend>
+
+                    <p>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required placeholder="이름을 입력하세요">
+                    </p>
+
+                    <p>
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required placeholder="이메일을 입력하세요">
+                    </p>
+
+                    <p>
+                        <label for="type">문의 유형</label>
+                        <select id="type" name="type">
+                            <option value="project" selected>프로젝트 제안</option>
+                            <option value="study">스터디 문의</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">문의 내용</label><br>
+                        <textarea id="message" name="message" rows="5" cols="33" required placeholder="문의 내용을 입력하세요"></textarea>
+                    </p>
+
+                    <button type="submit">보내기</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 김하늘. All rights reserved.</p>
+        <p>이메일: <a href="mailto:haneul09290@gmail.com">haneul09290@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
